@@ -1,5 +1,6 @@
 // app/components/Footer.tsx
 import { Github, Linkedin, Globe } from "lucide-react";
+import Link from "next/link";
 
 export default function Footer() {
     return (
@@ -11,13 +12,13 @@ export default function Footer() {
             </p>
 
             <div className="flex gap-6">
-                <a
+                <Link
                     href="/"
                     className="text-blue-600 hover:text-white transition"
                     title="Portfólio"
                 >
                     <Globe className="w-5 h-5" />
-                </a>
+                </Link>
                 <a
                     href="https://github.com/luiz01204"
                     target="_blank"
