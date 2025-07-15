@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import perfil from "../../public/perfil.jpg";
 import { FolderCode, Phone, MessageCircle } from "lucide-react";
+import Footer from "@/components/Footer";
 
 export default function Home() {
     const whatsappNumber = "5548991107709";
@@ -23,7 +24,7 @@ export default function Home() {
 
     return (
         <div className="flex flex-col min-h-screen bg-black text-white">
-            <main className="flex-grow flex flex-col justify-center items-center text-center gap-8 px-4 mt-12">
+            <main className="flex-grow flex flex-col justify-center items-center text-center gap-8 px-4 mt-8 mb-12">
                 <Image
                     src={perfil}
                     alt="foto de perfil do Luiz"
@@ -80,6 +81,7 @@ export default function Home() {
                     <span>Me chama no WhatsApp</span>
                 </a>
             </main>
+            <Footer />
         </div>
     );
 }

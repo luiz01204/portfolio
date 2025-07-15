@@ -1,7 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import perfil from "../../../public/perfil.jpg";
-import { Github, Linkedin, Globe, MessageCircleMore } from "lucide-react";
+import { Github, Linkedin, Globe, MessageCircleMore, ArrowLeft } from "lucide-react";
+import Footer from "@/components/Footer";
 
 export default function Links() {
     const links = [
@@ -28,19 +29,26 @@ export default function Links() {
     ];
 
     return (
-        <div className="flex flex-col min-h-screen bg-black text-white px-4 justify-center items-center">
-            <main className="w-full max-w-md flex flex-col items-center gap-6 mt-12 mb-12 mx-auto">
+        <div className="flex flex-col min-h-screen bg-black text-white px-4">
+            <Link
+                href="/"
+                className="mt-4 mb-8 self-start bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
+            >
+                <ArrowLeft className="w-5 h-5" />
+            </Link>
+
+            <main className="w-full max-w-md flex flex-col flex-grow gap-6 mb-12 mt-8 mx-auto justify-center items-center">
                 <Image
                     src={perfil}
                     alt="Foto de perfil do Luiz"
                     className="rounded-full border-4 border-blue-600 shadow-lg w-40 h-40 object-cover"
                 />
-                <h1 className="text-2xl font-bold text-blue-600">Luiz Antônio</h1>
+
+                <h1 className="text-2xl font-bold text-blue-600">Luiz Machado | DEV</h1>
                 <p className="text-gray-400 text-sm text-center -mt-4">
                     Desenvolvedor Full Stack apaixonado por código e café ☕
                 </p>
 
-                {/* Links */}
                 {links.map((link, index) => (
                     <a
                         key={index}
@@ -54,6 +62,7 @@ export default function Links() {
                     </a>
                 ))}
             </main>
+            <Footer />
         </div>
     );
 }

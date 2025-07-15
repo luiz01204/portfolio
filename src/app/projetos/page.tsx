@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
+import Footer from "@/components/Footer";
 
 export default function Projetos() {
     const projetos = [
@@ -37,14 +38,14 @@ export default function Projetos() {
     const telefone = "5548991107709";
 
     return (
-        <div className="min-h-screen flex flex-col bg-black text-white">
-            <div className="px-6 py-10 flex flex-col items-center flex-grow">
-                <Link
-                    href="/"
-                    className="mb-8 self-start flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
-                >
-                    <ArrowLeft className="w-5 h-5" />
-                </Link>
+        <div className="px-4 min-h-screen flex flex-col bg-black text-white">
+            <Link
+                href="/"
+                className="mb-8 mt-4 self-start bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
+            >
+                <ArrowLeft className="w-5 h-5" />
+            </Link>
+            <main className=" flex flex-col flex-grow items-center mb-12 mt-8">
 
                 <h1 className="text-4xl font-bold text-center mb-10">
                     Meus <span className="text-blue-600">Projetos</span>
@@ -85,7 +86,8 @@ export default function Projetos() {
                         </div>
                     ))}
                 </div>
-            </div>
+            </main>
+            <Footer />
         </div>
     );
 }
