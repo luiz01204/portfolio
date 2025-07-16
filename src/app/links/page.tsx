@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import perfil from "../../../public/perfil.jpg";
+import perfil from "../../../public/perfil_menor.webp";
 import { Github, Linkedin, Globe, MessageCircleMore, ArrowLeft } from "lucide-react";
 import Footer from "@/components/Footer";
 
@@ -13,17 +13,17 @@ export default function Links() {
         },
         {
             nome: "GitHub",
-            url: "https://www.linkedin.com/in/luiz-ant%C3%B4nio-dos-santos-machado-393bb314b/",
+            url: "https://github.com/luiz01204",
             icon: <Github className="w-5 h-5" />,
         },
         {
             nome: "LinkedIn",
-            url: "https://linkedin.com/in/seuuser",
+            url: "https://www.linkedin.com/in/luiz-ant%C3%B4nio-dos-santos-machado-393bb314b/",
             icon: <Linkedin className="w-5 h-5" />,
         },
         {
             nome: "Meu Portfólio",
-            url: "/",
+            url: "https://luizmachado.dev.br",
             icon: <Globe className="w-5 h-5" />,
         },
     ];

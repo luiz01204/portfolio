@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import perfil from "../../public/perfil.jpg";
+import perfil from "../../public/perfil_menor.webp";
 import { FolderCode, Phone, MessageCircle } from "lucide-react";
 import Footer from "@/components/Footer";
 
