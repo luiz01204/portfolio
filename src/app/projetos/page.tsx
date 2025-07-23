@@ -26,13 +26,6 @@ export default function Projetos() {
             link: "https://landing-page-pet-shop-sage.vercel.app/",
             whatsappMsg: "Olá! Me interessei pela landing page do Pet Shop. Pode me contar mais?",
         },
-        {
-            nome: "Landing page professora de inglês",
-            descricao: "Página de alta conversão para professores.",
-            imagem: "/ingles.png",
-            link: "https://mileny-landing-page.vercel.app/",
-            whatsappMsg: "Olá! Me interessei pela landing page da professora de ingês. Pode me contar mais?",
-        },
     ];
 
     const telefone = "5548991107709";
