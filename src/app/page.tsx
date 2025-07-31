@@ -35,13 +35,22 @@ export default function Home() {
 
                 <h1 className="text-3xl md:text-5xl font-bold">
                     Olá, eu sou o Luiz!
-                    <span className="text-blue-600"> Desenvolvedor Full Stack</span>.
+                    <span className="text-blue-600"> Desenvolvedor Web</span>.
                 </h1>
 
-                <p className="text-gray-300 max-w-xl text-lg">
-                    Transformo ideias em código com um toque de mágica digital.
-                </p>
+             
 
+                {/* SOBRE MIM AQUI */}
+                <section className="max-w-2xl text-gray-400 text-base md:text-lg leading-relaxed mb-6 px-4">
+                    <h2 className="text-2xl md:text-3xl font-semibold text-white mb-4">Sobre mim</h2>
+                    <p>
+                        Sou apaixonado por tecnologia, café forte e resolver problemas com código. 
+                        Desde que conheci o mundo da programação, venho me especializando em criar aplicações web modernas, rápidas e funcionais. 
+                        Gosto de colocar a mão na massa, aprender coisa nova todo dia e transformar desafios em soluções digitais.
+                    </p>
+                </section>
+
+                {/* BOTÕES */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-3xl mb-10">
                     <Link href={"/projetos"}>
                         <div className="p-6 rounded-2xl border-2 border-blue-600 shadow-md hover:shadow-xl transition duration-300 cursor-pointer hover:bg-blue-950">
